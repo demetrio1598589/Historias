@@ -1,0 +1,42 @@
+/* Estilos para el login */
+.formulario-login {
+    background: #ecf0f1;
+    padding: 30px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-login input {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario-login button {
+    padding: 10px 20px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-crear-cuenta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-crear-cuenta:hover {
+    background: #2980b9;
+}

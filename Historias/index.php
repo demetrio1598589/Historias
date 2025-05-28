@@ -21,9 +21,16 @@
                     <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
                     <li><a href="lista.html"><i class="fas fa-list"></i> Lista</a></li>
                     <li><a href="historia.html"><i class="fas fa-book-open"></i> Acerca de nosotros</a></li>
+                    <?php if(isset($_SESSION['usuario'])): ?>
+                        <li style="margin-left: auto;">
+                            <span><?php echo htmlspecialchars($_SESSION['usuario']); ?></span>
+                            <a href="logout.php" style="margin-left: 10px;"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                        </li>
+                    <?php else: ?>
+                        <li style="margin-left: auto;"><a href="/proyecto/app/views/login.php"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>      
-
         </div>
     </header>
 
