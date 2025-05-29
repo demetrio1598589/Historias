@@ -15,16 +15,22 @@ class User {
         return $stmt->fetch();
     }
 
-    public function crear($username, $password) {
+    public function crear($datos) {
         // Verificar si el usuario ya existe
-        $stmt = $this->pdo->prepare("SELECT * FROM usuarios WHERE usuario = ?");
-        $stmt->execute([$username]);
+        $stmt = $this->pdo->prepare("SELECT * FROM usuarios WHERE usuario = ? OR email = ?");
+        $stmt->execute([$datos['usuario'], $datos['email']]);
         if ($stmt->fetch()) {
             return false;
         }
 
-        // Crear nuevo usuario
-        $stmt = $this->pdo->prepare("INSERT INTO usuarios (usuario, password) VALUES (?, ?)");
-        return $stmt->execute([$username, $password]);
+        // Crear nuevo usuario con todos los campos
+        $stmt = $this->pdo->prepare("INSERT INTO usuarios (nombre, apellidos, email, usuario, password) VALUES (?, ?, ?, ?, ?)");
+        return $stmt->execute([
+            $datos['nombre'],
+            $datos['apellidos'],
+            $datos['email'],
+            $datos['usuario'],
+            $datos['password']
+        ]);
     }
 }

@@ -1,3 +1,4 @@
+<?php require_once 'check_session.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,23 +15,27 @@
 <body>
     <!-- Header común a todas las páginas -->
     <header>
-        <div>
-            <a href=""></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="lista.html"><i class="fas fa-list"></i> Lista</a></li>
-                    <li><a href="historia.html"><i class="fas fa-book-open"></i> Acerca de nosotros</a></li>
-                    <?php if(isset($_SESSION['usuario'])): ?>
-                        <li style="margin-left: auto;">
-                            <span><?php echo htmlspecialchars($_SESSION['usuario']); ?></span>
-                            <a href="logout.php" style="margin-left: 10px;"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-                        </li>
-                    <?php else: ?>
-                        <li style="margin-left: auto;"><a href="/proyecto/app/views/login.php"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a></li>
-                    <?php endif; ?>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-left">
+                    <li><a href="<?php echo HOME_URL; ?>"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="<?php echo HISTORIAS_URL; ?>lista.php"><i class="fas fa-list"></i> Lista</a></li>
+                    <li><a href="<?php echo HISTORIAS_URL; ?>nosotros.php"><i class="fas fa-book-open"></i> Acerca de nosotros</a></li>
                 </ul>
-            </nav>      
+                <?php if(isset($_SESSION['usuario'])): ?>
+                    <ul class="nav-right">
+                        <li>
+                            <span><i class="fas fa-user"></i> 
+                                <?php echo htmlspecialchars($_SESSION['nombre']); ?>
+                                <?php if (!empty($_SESSION['apellidos'])): ?>
+                                    <?php echo ' ' . htmlspecialchars($_SESSION['apellidos']); ?>
+                                <?php endif; ?>
+                            </span>
+                            <a href="<?php echo LOGOUT_URL; ?>" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                <?php endif; ?>
+            </nav>
         </div>
     </header>
 
@@ -47,37 +52,37 @@
                 <img src="img/his1.jpg" alt="Historia 1">
                 <h3>Caperucita roja</h3>
                 <p>Una aventura emocionante en el bosque.</p>
-                <a href="historia1.html">Leer más</a>
+                <a href="historia1.php">Leer más</a>
             </div>
             <div class="historia">
                 <img src="img/his2.webp" alt="Historia 2">
                 <h3>los 3 cerditos</h3>
                 <p>Una aventura de  cerditos.</p>
-                <a href="historia2.html">Leer más</a>
+                <a href="historia2.php">Leer más</a>
             </div>
             <div class="historia">
                 <img src="img/his3.jpg" alt="Historia 3">
                 <h3>El zorro y el sabueso</h3>
                 <p>Una historia fuera de lugar.</p>
-                <a href="historia3.html">Leer más</a>
+                <a href="historia3.php">Leer más</a>
             </div>
             <div class="historia">
                 <img src="img/his4.webp" alt="Historia 4">
                 <h3>El zorro y el condor.</h3>
                 <p>Un viaje al espacio lleno de peligros.</p>
-                <a href="historia4.html">Leer más</a>
+                <a href="historia4.php">Leer más</a>
             </div>
             <div class="historia">
                 <img src="img/his5.jfif" alt="Historia 5">
                 <h3>El casillo ambulante</h3>
                 <p>Una aventura alrededor de un castilllo.</p>
-                <a href="historia5.html">Leer más</a>
+                <a href="historia5.php">Leer más</a>
             </div>
             <div class="historia">
                 <img src="img/his6.jfif" alt="Historia 6">
                 <h3>Historia del pabellon rojo</h3>
                 <p>Un secreto familiar oculto por años.</p>
-                <a href="historia6.html">Leer más</a>
+                <a href="historia6.php">Leer más</a>
             </div>
         </section>
 

@@ -2,9 +2,7 @@
 require_once __DIR__ . '/../config/paths.php';
 require_once __DIR__ . '/../app/controllers/AuthController.php';
 
-session_start();
-
-// Solo iniciar sesión si no está ya activa
+// Iniciar sesión si no está activa
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -15,15 +13,12 @@ if (isset($_SESSION['usuario'])) {
     exit();
 }
 
-// Mostrar mensaje de logout exitoso
-if (isset($_GET['logout'])) {
-    $mensaje = "Has cerrado sesión correctamente.";
-}
-
 $auth = new AuthController();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $auth->login();
+    $auth->register();
 } else {
-    include __DIR__ . '/../app/views/login.php';
+    // Mover el formulario HTML a un archivo separado en views
+    include __DIR__ . '/../app/views/registro_form.php';
 }
+?>

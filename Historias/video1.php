@@ -1,3 +1,4 @@
+<?php require_once 'check_session.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,13 +10,28 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="lista.html"><i class="fas fa-list"></i> Lista</a></li>
-                <li><a href="historia.html"><i class="fas fa-book-open"></i> Acerca de nosotros</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-left">
+                    <li><a href="<?php echo HOME_URL; ?>"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="<?php echo HISTORIAS_URL; ?>lista.php"><i class="fas fa-list"></i> Lista</a></li>
+                    <li><a href="<?php echo HISTORIAS_URL; ?>nosotros.php"><i class="fas fa-book-open"></i> Acerca de nosotros</a></li>
+                </ul>
+                <?php if(isset($_SESSION['usuario'])): ?>
+                    <ul class="nav-right">
+                        <li>
+                            <span><i class="fas fa-user"></i> 
+                                <?php echo htmlspecialchars($_SESSION['nombre']); ?>
+                                <?php if (!empty($_SESSION['apellidos'])): ?>
+                                    <?php echo ' ' . htmlspecialchars($_SESSION['apellidos']); ?>
+                                <?php endif; ?>
+                            </span>
+                            <a href="<?php echo LOGOUT_URL; ?>" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                <?php endif; ?>
+            </nav>
+        </div>
     </header>
 
     <main id="historia-individual">
@@ -33,6 +49,14 @@
                 <h2>Encuentro con Capibaras 🐾</h2>
                 <p>Los <strong>capibaras</strong> son los roedores más grandes del mundo y conocidos por su naturaleza tranquila y sociable. Durante un reciente encuentro en un entorno natural, fue posible observar su comportamiento pacífico, su interacción con otras especies y su curiosa cercanía con los humanos.</p>
                 <p>Estos animales disfrutan del agua, viven en grupos y se comunican mediante sonidos suaves. El momento fue perfecto para aprender sobre su ecosistema, su dieta herbívora y su importancia en la biodiversidad local.</p>
+            </div>
+            <div class="botones-navegacion">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                    <i class="fas fa-arrow-up"></i> Arriba
+                </button>
+                <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
+                    <i class="fas fa-home"></i> Portada
+                </button>
             </div>
 
         </section>
