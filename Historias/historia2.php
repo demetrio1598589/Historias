@@ -35,35 +35,53 @@
     </header>
 
     <main id="historia-individual">
-        <section class="historia-completa">
-            <img src="img/his2.webp" alt="Historia seleccionada">
-            <h1>Los 3 cerditos</h1>
-            <p>Este cuento relata la vida de tres cerditos hermanos que 
-                deciden construir sus casas para protegerse del lobo feroz que amenaza con comérselos. 
-                El primer cerdito construye su casa de paja porque quiere terminar rápido y jugar, 
-                el segundo la hace de madera, y el tercero, más prudente, de ladrillos. </p>
-            <p>
-                Cuando el lobo llega, sopla y destruye las casas de paja y madera, 
-                pero no logra derribar la de ladrillos. Los dos primeros cerditos 
-                huyen a la casa del tercero y juntos logran salvarse. 
-                El cuento destaca valores como la importancia del esfuerzo, la planificación, la perseverancia y la responsabilidad. 
-                También muestra que la pereza y la falta de previsión pueden traer consecuencias negativas.
-            </p>
-            <p>El cuento ha sido adaptado en numerosas ocasiones,
-                 convirtiéndose en un clásico de la literatura infantil. 
-                 Su mensaje perdura a través de generaciones, recordando a los niños 
-                 la importancia de seguir las instrucciones de sus padres y ser cautelosos 
-                 con quienes no conocen.</p>
-            <div class="botones-navegacion">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                    <i class="fas fa-arrow-up"></i> Arriba
-                </button>
-                <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
-                    <i class="fas fa-home"></i> Portada
-                </button>
-            </div>
-        </section>
-    </main>
+    <section class="historia-completa">
+        <img src="img/his2.webp" alt="Los tres cerditos">
+        <h1>Los Tres Cerditos</h1>
+        <p>Había una vez tres cerditos hermanos que decidieron construir cada uno su propia casa, 
+            pues sabían que en el bosque vivía un lobo feroz que quería comérselos. Cada cerdito eligió un material distinto según su manera de ser.</p>
+
+        <p>El cerdito menor era juguetón y no quería trabajar mucho, así que construyó su casa rápidamente con paja. 
+            “Así terminaré pronto y podré ir a jugar”, dijo feliz. El segundo cerdito, un poco más aplicado pero aún impaciente, 
+            eligió la madera. Su casa era algo más fuerte, pero también se hizo rápido. “Esto es suficiente para estar seguro”, 
+            pensó. El tercer cerdito, el mayor y más sensato, decidió construir su casa de ladrillos. Sabía que tomaría más tiempo y esfuerzo, 
+            pero también que sería la más resistente.</p>
+
+        <p>Pasaron los días y, como habían temido, el lobo feroz apareció. Llegó primero a la casa de paja y tocó la puerta: 
+            “¡Cerdito, cerdito, déjame entrar!”. “¡No, no, no! ¡Ni aunque me soples y resoples no te dejaré entrar!”, 
+            respondió el cerdito. Entonces el lobo sopló con fuerza: “¡Soplaré y soplaré y tu casa derribaré!”, 
+            y así lo hizo. La casa voló en pedazos y el cerdito corrió asustado hacia la casa de su hermano de madera.</p>
+
+        <p>El lobo los siguió hasta la segunda casa. De nuevo, llamó a la puerta. “¡Cerditos, cerditos, déjenme entrar!”. 
+            “¡No, no, no! ¡Ni aunque nos soples y resoples te dejaremos entrar!”. El lobo enfurecido sopló y sopló, y finalmente la casa de madera también cayó. 
+            Ambos cerditos huyeron corriendo a la casa de ladrillos de su hermano mayor.</p>
+
+        <p>El lobo no se rindió y fue hasta la tercera casa. Golpeó la puerta y gritó: “¡Cerditos, cerditos, déjenme entrar!”. 
+            Los tres respondieron: “¡No, no, no! ¡Ni aunque nos soples y resoples te dejaremos entrar!”. El lobo, furioso, 
+            sopló con todas sus fuerzas, pero la casa ni se movió. Sopló una y otra vez, hasta quedarse sin aliento. 
+            Entonces tuvo una nueva idea: treparía por el tejado y entraría por la chimenea.</p>
+
+        <p>Pero el cerdito mayor ya había previsto esa posibilidad. Rápidamente encendió un gran fuego en la chimenea y colocó una olla con agua hirviendo. 
+            Cuando el lobo descendió por el conducto, cayó directo en la olla caliente y salió huyendo aullando de dolor. 
+            Nunca más volvió a molestar a los cerditos.</p>
+
+        <p>Desde aquel día, los tres hermanos vivieron juntos en la casa de ladrillos, seguros y felices. Los dos cerditos menores aprendieron una valiosa lección: 
+            hacer las cosas bien desde el principio, aunque tome más tiempo, es siempre la mejor decisión.</p>
+
+        <p>Este cuento ha sido contado de generación en generación, enseñando a los niños la importancia del esfuerzo, 
+            la responsabilidad y la planificación. También muestra que actuar con pereza o tomar el camino fácil puede traer problemas. 
+            Y lo más importante: la unión entre hermanos y la sabiduría pueden vencer incluso a los mayores peligros.</p>
+
+        <div class="botones-navegacion">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                <i class="fas fa-arrow-up"></i> Arriba
+            </button>
+            <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
+                <i class="fas fa-home"></i> Portada
+            </button>
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2025 Historias Web. Todos los derechos reservados.</p>

@@ -35,36 +35,50 @@
     </header>
 
     <main id="historia-individual">
-        <section class="historia-completa">
-            <img src="img/his1.jpg" alt="Historia seleccionada">
-            <h1>Caperucita Roja</h1>
-            <p>Caperucita Roja es un cuento tradicional que narra la historia de una niña
-                 que lleva una capa roja y recibe la misión de llevar comida a su abuela 
-                 enferma que vive al otro lado del bosque. Su madre le advierte que no 
-                 hable con extraños ni se desvíe del camino. Sin embargo, en el bosque, 
-                 Caperucita se encuentra con un lobo astuto que, haciéndose amigo, 
-                 la engaña para que le diga dónde está la casa de su abuela.</p>
-            <p>El lobo llega primero, devora a la abuela y se disfraza de ella
-                 para engañar a la niña. Al llegar, Caperucita se da cuenta del engaño, 
-                 pero ya es casi tarde. Según la versión, un leñador o cazador aparece 
-                  rescata a ambas, matando al lobo. La historia enseña la importancia de la obediencia, 
-                  la precaución con los extraños y el peligro de la ingenuidad.</p>
-            <p>El cuento ha sido adaptado en numerosas ocasiones,
-                 convirtiéndose en un clásico de la literatura infantil. 
-                 Su mensaje perdura a través de generaciones, recordando a los niños 
-                 la importancia de seguir las instrucciones de sus padres y ser cautelosos 
-                 con quienes no conocen.</p>
-            <div class="botones-navegacion">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                    <i class="fas fa-arrow-up"></i> Arriba
-                </button>
-                <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
-                    <i class="fas fa-home"></i> Portada
-                </button>
-            </div>
+    <section class="historia-completa">
+        <img src="img/his1.jpg" alt="Caperucita Roja">
+        <h1>Caperucita Roja</h1>
+        <p>Había una vez una dulce niña a la que todos querían mucho, especialmente su abuela, 
+            quien le regaló una capa con capucha de color rojo. Desde entonces, todos la llamaban Caperucita Roja. 
+            Un día, su madre le pidió que llevara una cesta con pan, pastel y mantequilla a su abuela enferma, que vivía al otro lado del bosque.</p>
 
-        </section>
-    </main>
+        <p>Antes de salir, su madre le dio una advertencia muy clara: “No hables con desconocidos 
+            y no te apartes del camino”. Caperucita Roja asintió con la cabeza y emprendió su camino alegremente, 
+            sin saber que alguien más la observaba desde entre los árboles: un lobo hambriento y astuto.</p>
+
+        <p>El lobo se le acercó con voz suave y amable. “¿A dónde vas, niña?”, preguntó. Caperucita, sin sospechar del peligro, 
+            le respondió inocentemente: “Voy a casa de mi abuelita a llevarle comida. Vive en la cabaña al otro lado del bosque”.</p>
+
+        <p>El lobo, lleno de malicia, ideó un plan. Se despidió de la niña y corrió por el camino más corto hacia la casa de la abuela. 
+            Al llegar, tocó la puerta. La abuela, al ver al lobo, no tuvo tiempo de escapar. El lobo la devoró de un bocado, 
+            se disfrazó con su ropa y se metió en la cama para esperar a Caperucita.</p>
+
+        <p>Minutos después, Caperucita Roja llegó a la cabaña. Extrañada por la voz ronca de su “abuelita” y su extraña apariencia, 
+            empezó a hacer preguntas: “Abuelita, qué ojos tan grandes tienes”, dijo. “Son para verte mejor”, respondió el lobo. 
+            “Y qué orejas tan grandes tienes”, insistió. “Son para oírte mejor”. “¡Y qué dientes tan grandes tienes!”. 
+            “¡Son para comerte mejor!”, gritó el lobo y saltó de la cama para devorarla también.</p>
+
+        <p>Por suerte, un cazador que pasaba por allí escuchó los gritos. Entró rápidamente a la cabaña, vio al lobo dormido con la panza llena y, 
+            con su cuchillo, le abrió el vientre. De allí salieron sanas y salvas la abuelita y Caperucita Roja. 
+            Para que el lobo no volviera a hacer daño, llenaron su estómago de piedras, y cuando despertó, cayó muerto por el peso.</p>
+
+        <p>Desde aquel día, Caperucita Roja nunca volvió a hablar con extraños ni a desobedecer a su madre. 
+            Aprendió que ser amable está bien, pero siempre con precaución, y que el mundo puede esconder peligros donde menos se esperan.</p>
+
+        <p>Así termina esta historia que ha pasado de generación en generación, enseñando a los niños a ser prudentes, 
+            obedientes y a no dejarse engañar por las apariencias.</p>
+
+        <div class="botones-navegacion">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                <i class="fas fa-arrow-up"></i> Arriba
+            </button>
+            <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
+                <i class="fas fa-home"></i> Portada
+            </button>
+        </div>
+    </section>
+</main>
+
 
     <footer>
         <p>&copy; 2025 Historias Web. Todos los derechos reservados.</p>

@@ -35,38 +35,73 @@
     </header>
 
     <main id="historia-individual">
-        <section class="historia-completa">
-            <img src="img/his6.jfif" alt="Historia seleccionada">
-            <h1>El pabellon rojo</h1>
-            <p>
-                "El Pabellón Rojo" es una novela clásica china que relata 
-                la vida de la familia Jia durante el final de la dinastía Qing. 
-                El pabellón rojo, símbolo de la riqueza y decadencia familiar, 
-                es testigo de intrigas, amores, traiciones y la lucha por el poder dentro de la familia. 
-                A través de los personajes principales, como Bao-yu y Dai-yu, 
-                se exploran temas como la fragilidad de la fortuna, el destino, 
-                el amor trágico y la crítica social. 
-            </p>
-            <p>
-                La obra es un retrato detallado de la sociedad feudal china, 
-                sus tradiciones y conflictos, con un enfoque en la melancolía y la inevitable caída de lo que fue glorioso.
-            
-            </p>
-            <p>El cuento ha sido adaptado en numerosas ocasiones,
-                 convirtiéndose en un clásico de la literatura infantil. 
-                 Su mensaje perdura a través de generaciones, recordando a los niños 
-                 la importancia de seguir las instrucciones de sus padres y ser cautelosos 
-                 con quienes no conocen.</p>
-            <div class="botones-navegacion">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                    <i class="fas fa-arrow-up"></i> Arriba
-                </button>
-                <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
-                    <i class="fas fa-home"></i> Portada
-                </button>
-            </div>
-        </section>
-    </main>
+    <section class="historia-completa">
+        <img src="img/his6.jfif" alt="El Pabellón Rojo">
+        <h1>El Pabellón Rojo</h1>
+        <p>
+            En los últimos años de la dinastía Qing, cuando el esplendor de las grandes familias comenzaba a desvanecerse, vivía la familia Jia, 
+            una de las más poderosas y respetadas de la ciudad. Su mansión, majestuosa y ornamentada, albergaba generaciones de historia, honor y riqueza. 
+            Pero tras los muros de piedra tallada y los jardines de loto, también se ocultaban celos, ambiciones rotas y amores imposibles. 
+            Esta es la historia que narra *El Pabellón Rojo*, una de las más grandes obras literarias de la tradición china.
+        </p>
+
+        <p>
+            En el corazón de esta historia se encuentra Jia Bao-yu, un joven noble, sensible y rebelde, nacido con una joya de jade en la boca, 
+            lo que presagiaba un destino extraordinario. A pesar de las expectativas que pesaban sobre él como heredero de la familia, 
+            Bao-yu despreciaba los caminos del poder y la burocracia, y prefería el arte, la poesía, los jardines y la compañía de las mujeres del pabellón interior. 
+            Allí creció entre primas, sirvientas y tías, todas atrapadas por las mismas redes de deber, tradición y represión.
+        </p>
+
+        <p>
+            Su prima Lin Dai-yu, una joven de salud frágil pero espíritu fuerte, compartía con él una conexión profunda, más allá de lo racional. 
+            Ambos se entendían en silencio, como dos almas destinadas pero atrapadas en un mundo que no aceptaba su unión. Dai-yu, huérfana y vulnerable, 
+            encontraba en la poesía y la música su refugio. Su relación con Bao-yu era un constante vaivén entre el deseo y la tristeza, 
+            entre lo que podía ser y lo que jamás se permitiría.
+        </p>
+
+        <p>
+            Mientras tanto, las intrigas políticas y familiares comenzaban a desgastar los cimientos de la familia Jia. Las finanzas se desmoronaban lentamente, 
+            y los enfrentamientos por el poder interno eran cada vez más crueles. Bao-yu, ajeno al mundo de los negocios y del deber masculino, 
+            se volvía una figura incómoda para la autoridad familiar. Se esperaba que se casara con Bao-chai, otra prima, inteligente, bella y obediente, 
+            elogiada por todos como la esposa ideal. Aunque el corazón de Bao-yu pertenecía a Dai-yu, las obligaciones impuestas por la familia sellaron su destino.
+        </p>
+
+        <p>
+            El día del matrimonio llegó, pero fue una trampa: Bao-yu creyó que se casaría con Dai-yu, y solo al final descubrió que la novia bajo el velo era Bao-chai. 
+            Dai-yu, consumida por el dolor y la enfermedad, murió esa misma noche, mientras su amado era unido por la fuerza a otra mujer. 
+            Fue el final simbólico del amor puro, sacrificado por las apariencias y las expectativas de una sociedad rígida.
+        </p>
+
+        <p>
+            Tras la boda, Bao-yu perdió interés en la vida. Su alma parecía partir en busca de Dai-yu, y su joya mágica desapareció. 
+            Algunos dicen que renunció al mundo y se convirtió en monje errante, 
+            dejando atrás el esplendor de su familia para buscar el verdadero significado de la existencia. 
+            Otros creen que fue un castigo divino por desafiar las normas del cielo. Lo cierto es que su desaparición marcó el fin de una era.
+        </p>
+
+        <p>
+            “El Pabellón Rojo” es más que una historia de amor trágico; es un retrato de una civilización que se derrumba, de un sistema feudal que ahoga los sueños, 
+            y de una juventud sensible que lucha por encontrar su lugar en un mundo que no la comprende. Con cientos de personajes, 
+            escenas poéticas y profundas reflexiones filosóficas, esta obra maestra ofrece una mirada honesta a la vida, la muerte, 
+            el destino y el valor de la emoción humana.
+        </p>
+
+        <p>
+            Hoy, siglos después de su creación, la historia de Bao-yu y Dai-yu sigue resonando. Nos recuerda que, a veces, 
+            el verdadero amor no es el que sobrevive, sino el que arde con tanta intensidad que deja huellas eternas en el alma.
+        </p>
+
+        <div class="botones-navegacion">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                <i class="fas fa-arrow-up"></i> Arriba
+            </button>
+            <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
+                <i class="fas fa-home"></i> Portada
+            </button>
+        </div>
+    </section>
+</main>
+
 
     <footer>
         <p>&copy; 2025 Historias Web. Todos los derechos reservados.</p>

@@ -35,33 +35,55 @@
     </header>
 
     <main id="historia-individual">
-        <section class="historia-completa">
-            <img src="img/his5.jfif" alt="Historia seleccionada">
-            <h1>El castillo ambulante</h1>
-            <p>
-                "El Castillo Ambulante" es un cuento de fantasía que narra la vida de Sophie, 
-                una joven que es transformada en una anciana por una maldición y busca romperla. 
-                Sophie encuentra refugio en el castillo ambulante de Howl, un mago misterioso y poderoso. 
-                A lo largo de su estancia, ambos personajes se enfrentan a desafíos mágicos y personales, 
-                y Sophie descubre que la verdadera fuerza está en el amor y la valentía. 
-                La historia combina aventura, magia y romance, y transmite valores sobre la aceptación, 
-                el crecimiento personal y la lucha contra prejuicios y maldiciones internas.
-            </p>
-            <p>El cuento ha sido adaptado en numerosas ocasiones,
-                 convirtiéndose en un clásico de la literatura infantil. 
-                 Su mensaje perdura a través de generaciones, recordando a los niños 
-                 la importancia de seguir las instrucciones de sus padres y ser cautelosos 
-                 con quienes no conocen.</p>
-            <div class="botones-navegacion">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                    <i class="fas fa-arrow-up"></i> Arriba
-                </button>
-                <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
-                    <i class="fas fa-home"></i> Portada
-                </button>
-            </div>
-        </section>
-    </main>
+    <section class="historia-completa">
+        <img src="img/his5.jfif" alt="El Castillo Ambulante">
+        <h1>El Castillo Ambulante</h1>
+        <p>En un mundo donde la magia y la tecnología conviven, vivía una joven modista llamada Sophie. 
+            Ella llevaba una vida sencilla y sin muchas expectativas, resignada a trabajar en la sombrerería familiar mientras sus hermanas exploraban el mundo. 
+            Pero todo cambió cuando un día, al regresar del trabajo, se encontró con un misterioso hombre de cabello dorado y porte elegante: 
+            era Howl, un mago tan poderoso como excéntrico.</p>
+
+        <p>Poco después de aquel encuentro, Sophie fue visitada por la Bruja del Páramo, quien, celosa de la conexión entre ella y Howl, 
+            la maldijo sin piedad. De un momento a otro, Sophie se vio transformada en una anciana de noventa años. Asustada y avergonzada, 
+            decidió dejar su hogar y buscar una forma de romper el hechizo.</p>
+
+        <p>Vagando por las colinas, Sophie encontró el castillo ambulante de Howl, una enorme estructura mágica que caminaba sobre patas mecánicas 
+            y se deslizaba entre valles y montañas. Sin tener adónde más ir, se presentó como una anciana y pidió quedarse como ama de llaves. 
+            Howl, curioso y distraído, aceptó sin reconocerla.</p>
+
+        <p>Dentro del castillo, Sophie conoció a Calcifer, un demonio de fuego que alimentaba la magia del castillo y estaba ligado por un contrato con Howl. 
+            También conoció a Markl, el joven aprendiz del mago. Poco a poco, Sophie se integró a ese mundo extraño y caótico, limpiando, 
+            organizando y aprendiendo más sobre los secretos que cada rincón del castillo guardaba.</p>
+
+        <p>Howl, por su parte, era perseguido por brujas, reyes y responsabilidades que evitaba constantemente. 
+            Bajo su fachada vanidosa y excéntrica, Sophie descubrió un corazón vulnerable, lleno de miedo a amar y ser amado. A medida que se conocían mejor, 
+            una conexión profunda crecía entre ambos, aunque ninguno podía admitirlo fácilmente.</p>
+
+        <p>Mientras tanto, una guerra se extendía por el reino. Los magos eran obligados a servir como armas, y Howl, aunque poderoso, 
+            se rehusaba a convertirse en un monstruo más de la guerra. Sophie, enfrentada a su propia transformación y a las amenazas del mundo, 
+            se volvió más fuerte, más decidida. Ya no era solo una joven tímida o una anciana frágil: 
+            era una mujer valiente que aprendía a amarse a sí misma y a luchar por quienes amaba.</p>
+
+        <p>La clave para romper la maldición estaba en el vínculo entre Howl y Calcifer, y en la capacidad de Sophie de ver más allá de las apariencias. 
+            Cuando ella entendió el origen del dolor de Howl, y cuando él se atrevió a amar sin miedo, la magia oscura que los rodeaba comenzó a desvanecerse. 
+            Sophie recuperó su juventud, y Howl recuperó su corazón. Juntos, decidieron dejar atrás las guerras, abrir el castillo a la luz, 
+            y empezar una nueva vida, no solo como mago y aprendiz, sino como compañeros.</p>
+
+        <p>“El Castillo Ambulante” es una historia que va más allá de la magia y la aventura. Es una lección sobre el poder del amor, 
+            el crecimiento personal, y la aceptación de uno mismo y de los demás. 
+            Nos enseña que las verdaderas transformaciones ocurren cuando enfrentamos nuestros miedos, y que a veces, la mayor magia está en atreverse a cambiar.</p>
+
+        <div class="botones-navegacion">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                <i class="fas fa-arrow-up"></i> Arriba
+            </button>
+            <button onclick="window.location.href='<?php echo HOME_URL; ?>';">
+                <i class="fas fa-home"></i> Portada
+            </button>
+        </div>
+    </section>
+</main>
+
 
     <footer>
         <p>&copy; 2025 Historias Web. Todos los derechos reservados.</p>
